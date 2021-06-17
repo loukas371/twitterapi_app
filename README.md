@@ -50,6 +50,7 @@ Install python 3.8 and pip.  For Windows 10 you can find it easily in the Micros
 ## Twitter API bearer token
 
 In order to be able to make requests to the Twitter API you need to apply for a free [developer account](https://developer.twitter.com/en/apply-for-access). This is a standard and common procedure and requires only a few minutes. After you have created your account and a project to link it to you will be able to get produce a bearer token (long string of characters). Simply create a text file named `token.txt` in the project folder and paste your bearer token inside. Save and close the file and your back-end should now be able to authenticate with Twitter API and make requests. 
+In case you have access to an Academic account you can use your bearer token in the same way and get access to even more powerful query operators without changing anything in the application code. Keep an eye out for the Advanced Availability in the operators [documentation](https://developer.twitter.com/en/docs/twitter-api/tweets/search/integrate/build-a-query). One such operator is also implemented in the UI (Area field) and could be very useful in the event of academic access. You can also get access to the full archive of tweets just by changing between the 2 URLs found in the source code (comment the first one and uncomment the second).
 
 !IMPORTANT: Keep your bearer token safe. This is only for your own use. If you misplace it others can make requests in your name and expend your tweet budget.
 

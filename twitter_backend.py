@@ -30,7 +30,11 @@ def searchtwitter(max_tweets):
         'user.fields': 'username',
         'place.fields': 'contained_within,country,country_code,name,place_type', 
         'max_results': 100}
+    
     url = "https://api.twitter.com/2/tweets/search/recent"
+
+    #in case of academic access change the url to this for full archive search
+    #url = "https://api.twitter.com/2/tweets/search/all"
 
     tweet_count = 0
     isFirst = True
